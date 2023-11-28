@@ -4,6 +4,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    S = Solution
+    S = Solution()
     inp = ""
     print(S.function(inp))
