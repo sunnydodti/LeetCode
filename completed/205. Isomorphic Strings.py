@@ -78,19 +78,28 @@ class Solution:
         #     return False
         return True
 
+    def isIsomorphic_ref_1(self, s: str, t: str) -> bool:
+        """typing"""
+        indexes_s = []
+        indexes_t = []
+        for i in range(len(s)):
+            indexes_s.append(s.index(s[i]))
+            indexes_t.append(t.index(t[i]))
+        if indexes_s == indexes_t:
+            return True
+        return False
+
 
 if __name__ == "__main__":
     S = Solution()
-    s = "paper"
-    t = "title"
-    # s = "bbbaaaba" # True
-    # t = "bbbaaaba"
-    # s = "abab" # True
-    # t = "baba"
-    s = "badc"  # False
-    t = "baba"
-    s = "egg"  # True
-    t = "add"
+    inps = [
+        ("paper", "title"),
+        ("bbbaaaba", "bbbaaaba"),
+        ("abab", "baba"),
+        ("badc", "baba"),
+        ("egg", "add"),
+    ]
+    inp = inps[0]
     # print(S.isIsomorphic(s, t))
     # print(S.isIsomorphic2(s, t))
-    print(S.isIsomorphic3(s, t))
+    print(S.isIsomorphic_ref_1(inp[0], inp[1]))
