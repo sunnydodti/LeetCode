@@ -79,7 +79,7 @@ class Solution:
         return True
 
     def isIsomorphic_ref_1(self, s: str, t: str) -> bool:
-        """typing"""
+        """accepted"""
         indexes_s = []
         indexes_t = []
         for i in range(len(s)):
