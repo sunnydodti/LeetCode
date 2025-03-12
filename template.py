@@ -1,9 +1,9 @@
 class Solution:
-    def function(inp):
+    def function(input):
         pass
 
 
 if __name__ == "__main__":
-    S = Solution()
-    inp = ""
-    print(S.function(inp))
+    solution = Solution()
+    input = ""
+    print(solution.function(input))
